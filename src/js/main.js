@@ -21,11 +21,11 @@ for(var i=0;i<weaponsdata.length;i++)
       {    
         'gearindex': weaponsdata[i].gearindex,
         'mainstat':weaponsdata[i].mainstat,
-        'crit':weaponsdata[i].crit+bigmateria*weaponsdata[i].slot1[0]
+        'crit':weaponsdata[i].crit+bigmateria*weaponsdata[i].critslot
       }
     ]
     console.log(tempdata)
-    weaponsdataperms.concat()
+    weaponsdataperms.concat(tempdata)
   }
 
 const hatsdata = JSON.parse(localStorage.getItem('weapons'));
@@ -40,5 +40,5 @@ var button = document.getElementById("solvebutton");
 button.addEventListener("click", startsolving);
 
 export function startsolving(){
-  console.log(alldata.weaponsdata[0].slot1);
+  console.log(weaponsdataperms);
 }

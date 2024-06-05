@@ -5,8 +5,8 @@ const weapons=[
         'mainstat':100,
         'crit':120,
         'dh':150,
-        'slot1':[1,1,0],
-        'slot2':[1,1,0]
+        'critslot':2,
+        'dhslot':1
     },
     {    
         'gearindex':2,
